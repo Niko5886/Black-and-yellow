@@ -2,3 +2,8 @@ nymerix-web/.next/
 nymerix-web/node_modules/
 nymerix-web/.env*
 *.log
+
+# Private project files
+DESIGN.md
+NYMERIX_BUILD_PROMPT.md
+reference/
