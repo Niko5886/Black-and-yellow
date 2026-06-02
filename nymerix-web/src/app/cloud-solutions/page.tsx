@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
 import { NumberedExpertise } from "@/components/NumberedExpertise";
+import { CTABand } from "@/components/CTABand";
 import Image from "next/image";
 
 export default function CloudSolutions() {
@@ -215,24 +216,12 @@ export default function CloudSolutions() {
         </div>
       </section>
 
-      {/* CTA Band */}
-      <section className="py-20 bg-brand-yellow">
-        <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)] flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="max-w-xl">
-            <h2 className="text-headline-md text-brand-charcoal mb-4">
-              Готови ли сте за следващата стъпка?
-            </h2>
-            <p className="text-body-lg text-brand-charcoal/80">
-              Свържете се с нас за безплатна консултация относно вашата облачна стратегия.
-            </p>
-          </div>
-          <div>
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-brand-charcoal text-white rounded-full text-label-bold transition-all hover:bg-brand-charcoal/90 active:scale-98 shrink-0">
-              Консултация
-            </a>
-          </div>
-        </div>
-      </section>
+      <CTABand
+        title="Готови ли сте за следващата стъпка?"
+        description="Свържете се с нас за безплатна консултация относно вашата облачна стратегия."
+        buttonText="Консултация"
+        buttonHref="/contact"
+      />
     </>
   );
 }

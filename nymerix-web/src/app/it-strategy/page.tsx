@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
 import { NumberedExpertise } from "@/components/NumberedExpertise";
-import Image from "next/image";
+import { CTABand } from "@/components/CTABand";
 
 export default function ItStrategy() {
   return (
@@ -96,34 +96,12 @@ export default function ItStrategy() {
         imageAlt="Expertise details"
       />
 
-      {/* CTA Band */}
-      <section className="py-24 bg-surface-container-lowest border-t border-surface-container-high">
-        <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)]">
-          <div className="bg-surface-container-low rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 border border-surface-container-high">
-            <div className="w-full md:w-1/2 flex flex-col items-start gap-6">
-              <h2 className="text-headline-md text-primary">
-                Готови ли сте за следващата стъпка?
-              </h2>
-              <p className="text-body-lg text-on-surface-variant">
-                Нека превърнем вашата технологична визия в реално бизнес предимство.
-              </p>
-              <div className="mt-4">
-                <a href="/contact" className="inline-flex items-center justify-center px-8 py-3 bg-brand-charcoal text-white rounded-full text-label-bold transition-all hover:bg-brand-charcoal/90 active:scale-98">
-                  Свържете се с нас →
-                </a>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 relative h-64 md:h-80 rounded-xl overflow-hidden">
-              <Image 
-                src="/img.png"
-                alt="Mountain landscape CTA"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTABand
+        title="Готови ли сте за следващата стъпка?"
+        description="Нека превърнем вашата технологична визия в реално бизнес предимство."
+        buttonText="Свържете се с нас →"
+        buttonHref="/contact"
+      />
     </>
   );
 }
