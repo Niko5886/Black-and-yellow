@@ -1,0 +1,7 @@
+[build]
+  base    = "nymerix-web"
+  command = "npm run build"
+  publish = "nymerix-web/.next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
