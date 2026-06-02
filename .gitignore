@@ -1,0 +1,4 @@
+nymerix-web/.next/
+nymerix-web/node_modules/
+nymerix-web/.env*
+*.log
