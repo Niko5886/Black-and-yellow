@@ -45,7 +45,9 @@ export default function About() {
               </div>
               <h3 className="text-headline-sm text-brand-charcoal">Email</h3>
               <a
-                href="mailto:nymerix.ltd@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=nymerix.ltd@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-body-sm text-brand-charcoal/80 hover:text-brand-charcoal transition-colors break-all"
               >
                 nymerix.ltd@gmail.com
