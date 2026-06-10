@@ -21,10 +21,14 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-surface/80 border-b border-surface-dim shadow-[var(--shadow-level-2)] transition-colors duration-300">
       <Container className="h-20 flex items-center justify-between">
 
-        {/* Logo */}
-        <Link href="/" className="text-primary text-xl font-bold tracking-tight">
+        {/* Logo — scrolls to the top of the current page */}
+        <button
+          type="button"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="text-primary text-xl font-bold tracking-tight"
+        >
           Nymerix LTD.
-        </Link>
+        </button>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-5 lg:gap-8">
