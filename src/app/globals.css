@@ -73,6 +73,30 @@ input, textarea, [contenteditable] {
     line-height: 1.1;
     letter-spacing: -0.02em;
   }
+  /* Hero headline — massive editorial display (Inter Black 900) */
+  .text-hero-display {
+    font-family: var(--font-inter), sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* Mobile (< 768px) */
+    font-size: clamp(40px, 10vw, 64px);
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+  }
+  /* Tablet (768px–1023px) — tight editorial treatment */
+  @media (min-width: 768px) {
+    .text-hero-display {
+      font-size: clamp(56px, 8vw, 90px);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+    }
+  }
+  /* Desktop (≥1024px) — massive, fills the container width */
+  @media (min-width: 1024px) {
+    .text-hero-display {
+      font-size: clamp(80px, 10vw, 160px);
+    }
+  }
   .text-headline-lg {
     font-size: 48px;
     font-weight: 700;

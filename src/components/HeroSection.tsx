@@ -54,14 +54,14 @@ export function HeroSection({
               return (
                 <span
                   key={index}
-                  className="inline-block bg-[#1A1A1A] text-[#FACC15] px-3 py-1 text-headline-lg-mobile md:text-display uppercase self-start w-auto"
+                  className="inline-block bg-[#1A1A1A] text-[#FACC15] px-3 py-1 text-hero-display uppercase self-start w-auto"
                 >
                   {line}
                 </span>
               );
             }
             return (
-              <span key={index} className="text-headline-lg-mobile md:text-display text-on-surface uppercase">
+              <span key={index} className="text-hero-display text-on-surface uppercase">
                 {line}
               </span>
             );
