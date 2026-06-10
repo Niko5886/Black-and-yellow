@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/HeroSection";
+import { Container } from "@/components/Container";
 
 export default function About() {
   return (
@@ -13,7 +14,7 @@ export default function About() {
       />
 
       <section className="py-24 bg-surface">
-        <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)]">
+        <Container>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             {/* Card 1 — Phone & Address */}
@@ -68,7 +69,7 @@ export default function About() {
             </div>
 
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

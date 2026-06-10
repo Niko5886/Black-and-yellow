@@ -18,7 +18,7 @@ export function CTABand({
       <Container>
         <div className="bg-[#FACC15] rounded-3xl px-10 py-14 md:px-16 md:py-16 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="w-full max-w-xl">
-            <h2 className="text-headline-lg text-[#1A1A1A] mb-4">
+            <h2 className="text-headline-md md:text-headline-lg text-[#1A1A1A] mb-4 break-words">
               {title}
             </h2>
             <p className="text-body-md text-[#1A1A1A]/80 mt-4">

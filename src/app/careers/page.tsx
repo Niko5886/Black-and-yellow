@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/HeroSection";
+import { Container } from "@/components/Container";
 
 export default function Careers() {
   return (
@@ -13,7 +14,7 @@ export default function Careers() {
       />
 
       <section className="py-24 bg-surface">
-        <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)]">
+        <Container>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             {/* Value Card 1 */}
@@ -59,7 +60,7 @@ export default function Careers() {
             </div>
             
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

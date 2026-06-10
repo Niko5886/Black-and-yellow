@@ -35,7 +35,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={`text-body-sm font-medium whitespace-nowrap transition-colors hover:text-brand-yellow relative ${
-                  isActive ? "text-brand-yellow" : "text-on-surface"
+                  isActive ? "text-on-surface" : "text-on-surface"
                 }`}
               >
                 {link.name}
@@ -58,7 +58,7 @@ export function Header() {
 
           {/* Hamburger Menu */}
           <button
-            className="md:hidden p-2 text-on-surface"
+            className="md:hidden p-3 text-on-surface"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle Menu"
           >
@@ -76,7 +76,7 @@ export function Header() {
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-surface border-b border-surface-dim shadow-lg">
-          <nav className="flex flex-col px-[var(--spacing-gutter)] py-4 gap-4">
+          <nav className="flex flex-col px-6 py-4 gap-4">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -85,7 +85,7 @@ export function Header() {
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`text-body-lg font-medium py-2 border-b border-surface-container ${
-                    isActive ? "text-brand-yellow" : "text-on-surface"
+                    isActive ? "text-on-surface border-l-4 border-l-brand-yellow pl-3" : "text-on-surface"
                   }`}
                 >
                   {link.name}
