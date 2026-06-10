@@ -16,52 +16,53 @@ export default function About() {
         <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-            {/* Value Card 1 — Vision */}
+            {/* Card 1 — Phone & Address */}
             <div className="bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 hover:shadow-[var(--shadow-level-2)] transition-shadow flex flex-col items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface">
-                {/* Rocket Icon */}
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.438 4.438 0 002.946-2.946 4.493 4.493 0 004.306-1.758q-2.65-.636-4.86-2.846-2.21-2.21-2.846-4.86A4.493 4.493 0 004.469 10.8c.613.045 1.221.15 1.816.312a14.903 14.903 0 00-2.42 2.42m2.38 2.38a3 3 0 114.243-4.243m4.242 4.242a3 3 0 114.243-4.243M13 18.5V21h-2v-2.5m-5.5-5.5H3v-2h2.5" />
+                {/* Location Pin Icon */}
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                 </svg>
               </div>
-              <h3 className="text-headline-sm text-primary">Нашата визия</h3>
-              <p className="text-body-sm text-on-surface-variant">
-                Да бъдем предпочитаният технологичен партньор за компании, които искат да изградят дигиталното си бъдеще на здрава основа.
-              </p>
+              <h3 className="text-headline-sm text-primary">Телефон &amp; адрес</h3>
+              <div className="text-body-sm text-on-surface-variant flex flex-col gap-1">
+                <a href="tel:+359988855911" className="hover:text-brand-yellow transition-colors">
+                  +359 98 885 5911
+                </a>
+                <span>Адрес: пл. Свобода 7, офис 38</span>
+                <span>Град Русе</span>
+              </div>
             </div>
 
-            {/* Value Card 2 (Yellow) — How we work */}
+            {/* Card 2 (Yellow) — Email */}
             <div className="bg-brand-yellow rounded-xl p-8 hover:shadow-[var(--shadow-level-2)] transition-shadow flex flex-col items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-brand-charcoal/10 flex items-center justify-center text-brand-charcoal">
-                {/* Handshake Icon */}
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
-                  <path d="m11 17 2 2a1 1 0 1 0 3-3" />
-                  <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
-                  <path d="m21 3 1 11h-2" />
-                  <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
-                  <path d="M3 4h8" />
+                {/* Envelope Icon */}
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                 </svg>
               </div>
-              <h3 className="text-headline-sm text-brand-charcoal">Как работим</h3>
-              <p className="text-body-sm text-brand-charcoal/80">
-                Комбинираме стратегическо мислене с техническа експертиза. Всеки проект започва с дълбоко разбиране на бизнес целите.
-              </p>
+              <h3 className="text-headline-sm text-brand-charcoal">Email</h3>
+              <a
+                href="mailto:nymerix.ltd@gmail.com"
+                className="text-body-sm text-brand-charcoal/80 hover:text-brand-charcoal transition-colors break-all"
+              >
+                nymerix.ltd@gmail.com
+              </a>
             </div>
 
-            {/* Value Card 3 — Why Nymerix */}
+            {/* Card 3 — Tagline */}
             <div className="bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 hover:shadow-[var(--shadow-level-2)] transition-shadow flex flex-col items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface">
-                {/* Target Icon */}
+                {/* Sparkles Icon */}
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <circle cx="12" cy="12" r="10" />
-                  <circle cx="12" cy="12" r="6" />
-                  <circle cx="12" cy="12" r="2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
                 </svg>
               </div>
-              <h3 className="text-headline-sm text-primary">Защо Nymerix</h3>
-              <p className="text-body-sm text-on-surface-variant">
-                Прецизност във всеки пиксел не е просто слоган — това е стандартът, по който измерваме всяко решение и всеки ред код.
-              </p>
+              <h3 className="text-headline-sm text-primary">
+                Вашите идеи. Нашата експертиза. Общият ни успех.
+              </h3>
             </div>
 
           </div>

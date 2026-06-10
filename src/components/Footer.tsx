@@ -57,8 +57,8 @@ export function Footer() {
           {/* Col 4 */}
           <div className="flex flex-col gap-4">
             <h4 className="text-label-caps text-on-surface">КОНТАКТ</h4>
-            <a href="mailto:office@nymerix.tech" className="text-body-sm text-on-surface-variant hover:text-brand-yellow transition-colors">
-              office@nymerix.tech
+            <a href="mailto:nymerix.ltd@gmail.com" className="text-body-sm text-on-surface-variant hover:text-brand-yellow transition-colors">
+              nymerix.ltd@gmail.com
             </a>
             <div className="flex items-center gap-4 mt-2">
               <a href="#" className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-brand-yellow hover:text-brand-charcoal transition-colors" aria-label="Facebook">
