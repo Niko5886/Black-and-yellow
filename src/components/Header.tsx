@@ -10,6 +10,7 @@ const navLinks = [
   { name: "IT Стратегия", href: "/it-strategy" },
   { name: "UI/UX Дизайн", href: "/ui-ux-design" },
   { name: "Облачни решения", href: "/cloud-solutions" },
+  { name: "За нас", href: "/about" },
 ];
 
 export function Header() {
@@ -26,14 +27,14 @@ export function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-8">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-body-sm font-medium transition-colors hover:text-brand-yellow relative ${
+                className={`text-body-sm font-medium whitespace-nowrap transition-colors hover:text-brand-yellow relative ${
                   isActive ? "text-brand-yellow" : "text-on-surface"
                 }`}
               >
