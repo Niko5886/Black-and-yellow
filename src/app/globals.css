@@ -73,14 +73,14 @@ input, textarea, [contenteditable] {
     font-weight: 900;
     text-transform: uppercase;
     /* Mobile (< 768px) */
-    font-size: clamp(34px, 8.5vw, 54px);
+    font-size: clamp(32px, 8.08vw, 51px);
     line-height: 1.0;
     letter-spacing: -0.02em;
   }
   /* Tablet (768px–1023px) — tight editorial treatment */
   @media (min-width: 768px) {
     .text-hero-display {
-      font-size: clamp(48px, 6.8vw, 76px);
+      font-size: clamp(46px, 6.46vw, 72px);
       line-height: 0.95;
       letter-spacing: -0.03em;
     }
@@ -88,7 +88,7 @@ input, textarea, [contenteditable] {
   /* Desktop (≥1024px) — massive, fills the container width */
   @media (min-width: 1024px) {
     .text-hero-display {
-      font-size: clamp(68px, 8.5vw, 136px);
+      font-size: clamp(65px, 8.08vw, 129px);
     }
   }
   .text-headline-lg {
