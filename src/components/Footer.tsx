@@ -42,7 +42,7 @@ export function Footer() {
             <h4 className="text-label-caps text-on-surface">КОМПАНИЯ</h4>
             <ul className="flex flex-col gap-3">
               <li>
-                <Link href="#" className="text-body-sm text-on-surface-variant hover:text-brand-yellow transition-colors">
+                <Link href="/about" className="text-body-sm text-on-surface-variant hover:text-brand-yellow transition-colors">
                   За нас
                 </Link>
               </li>
