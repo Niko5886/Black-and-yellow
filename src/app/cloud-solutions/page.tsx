@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
 import { NumberedExpertise } from "@/components/NumberedExpertise";
 import { CTABand } from "@/components/CTABand";
+import { Container } from "@/components/Container";
 import Image from "next/image";
 
 export default function CloudSolutions() {
@@ -17,7 +18,7 @@ export default function CloudSolutions() {
 
       {/* Нашият подход */}
       <section className="py-24 bg-surface">
-        <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)]">
+        <Container>
           <div className="mb-16">
             <h2 className="text-headline-md md:text-headline-lg text-primary mb-4">
               Нашият подход
@@ -34,21 +35,21 @@ export default function CloudSolutions() {
                 Детайлен анализ на съществуващата инфраструктура и бизнес нужди.
               </p>
             </div>
-            
+
             <div className="bg-brand-yellow rounded-xl p-8 hover:shadow-[var(--shadow-level-2)] transition-shadow">
               <h3 className="text-headline-sm text-brand-charcoal mb-3">Миграция</h3>
               <p className="text-body-sm text-brand-charcoal/80">
                 Безпроблемно прехвърляне на данни и приложения с минимален престой.
               </p>
             </div>
-            
+
             <div className="bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 hover:shadow-[var(--shadow-level-2)] transition-shadow">
               <h3 className="text-headline-sm text-primary mb-3">Сигурност</h3>
               <p className="text-body-sm text-on-surface-variant">
                 Внедряване на многослойни протоколи за защита и криптиране.
               </p>
             </div>
-            
+
             <div className="bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 hover:shadow-[var(--shadow-level-2)] transition-shadow">
               <h3 className="text-headline-sm text-primary mb-3">Скалируемост</h3>
               <p className="text-body-sm text-on-surface-variant">
@@ -56,12 +57,12 @@ export default function CloudSolutions() {
               </p>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Quote Band */}
       <section className="py-24 bg-brand-charcoal">
-        <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)] text-center">
+        <Container className="text-center">
           <span className="text-label-caps text-brand-yellow block mb-8">СТАНДАРТИ НА NYMERIX</span>
           <blockquote className="text-headline-md text-white mb-12 max-w-3xl mx-auto">
             "Облачните технологии са в основата на модерната мащабируемост."
@@ -71,7 +72,7 @@ export default function CloudSolutions() {
             <span className="text-label-caps text-surface-container-high">ОБЛАЧЕН ЕТОС</span>
             <div className="h-[1px] w-12 bg-surface-container-high"></div>
           </div>
-        </div>
+        </Container>
       </section>
 
       <NumberedExpertise
@@ -98,7 +99,7 @@ export default function CloudSolutions() {
 
       {/* MICROSOFT 365 КОНСУЛТАЦИИ */}
       <section className="py-24 bg-surface border-t border-surface-container-high">
-        <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)]">
+        <Container>
           <div className="mb-16 text-center">
             <h2 className="text-headline-md md:text-headline-lg text-primary mb-4">
               MICROSOFT 365 КОНСУЛТАЦИИ
@@ -115,21 +116,21 @@ export default function CloudSolutions() {
                 Плавен преход към Microsoft 365 от всякакви legacy платформи.
               </p>
             </div>
-            
+
             <div className="bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 hover:border-brand-yellow transition-colors">
               <h3 className="text-headline-sm text-primary mb-3">Teams & Collab</h3>
               <p className="text-body-sm text-on-surface-variant">
                 Конфигуриране на среда за безпроблемна екипна работа.
               </p>
             </div>
-            
+
             <div className="bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 hover:border-brand-yellow transition-colors">
               <h3 className="text-headline-sm text-primary mb-3">Сигурност</h3>
               <p className="text-body-sm text-on-surface-variant">
                 Защита на данните с Defender, Intune и Advanced Threat Protection.
               </p>
             </div>
-            
+
             <div className="bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 hover:border-brand-yellow transition-colors">
               <h3 className="text-headline-sm text-primary mb-3">Одит</h3>
               <p className="text-body-sm text-on-surface-variant">
@@ -137,12 +138,12 @@ export default function CloudSolutions() {
               </p>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* MICROSOFT COPILOT */}
       <section className="py-24 bg-surface-container-lowest border-t border-surface-container-high">
-        <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)]">
+        <Container>
           <div className="mb-16">
             <h2 className="text-headline-md md:text-headline-lg text-primary max-w-2xl">
               MICROSOFT COPILOT: БЪДЕЩЕТО НА ЕФЕКТИВНОСТТА
@@ -150,10 +151,10 @@ export default function CloudSolutions() {
           </div>
 
           <div className="flex flex-col lg:flex-row gap-16 items-start">
-            
+
             {/* Left Column */}
             <div className="w-full lg:w-1/2 flex flex-col gap-12">
-              
+
               {/* Yellow Stat Card */}
               <div className="bg-brand-yellow rounded-xl p-8 flex flex-col items-start gap-6 shadow-[var(--shadow-level-2)]">
                 <div className="text-[64px] font-black text-brand-charcoal leading-none -tracking-widest">
@@ -204,16 +205,16 @@ export default function CloudSolutions() {
 
             {/* Right Column */}
             <div className="w-full lg:w-1/2 relative h-[600px] rounded-2xl overflow-hidden shadow-lg border border-surface-container-high">
-              <Image 
+              <Image
                 src="/img.png"
                 alt="Microsoft Copilot Device"
                 fill
                 className="object-cover"
               />
             </div>
-            
+
           </div>
-        </div>
+        </Container>
       </section>
 
       <CTABand

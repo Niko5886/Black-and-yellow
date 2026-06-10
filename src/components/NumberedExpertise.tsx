@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Container } from "./Container";
 
 interface ExpertiseItem {
   number: string;
@@ -15,7 +16,7 @@ interface NumberedExpertiseProps {
 export function NumberedExpertise({ title, items, imageAlt }: NumberedExpertiseProps) {
   return (
     <section className="py-24 bg-surface">
-      <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)]">
+      <Container>
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           {/* Left Column - Numbered Items */}
           <div className="w-full lg:w-1/2">
@@ -50,7 +51,7 @@ export function NumberedExpertise({ title, items, imageAlt }: NumberedExpertiseP
             />
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

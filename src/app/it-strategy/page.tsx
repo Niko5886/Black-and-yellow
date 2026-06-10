@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
 import { NumberedExpertise } from "@/components/NumberedExpertise";
 import { CTABand } from "@/components/CTABand";
+import { Container } from "@/components/Container";
 
 export default function ItStrategy() {
   return (
@@ -17,7 +18,7 @@ export default function ItStrategy() {
 
       {/* Нашият подход */}
       <section className="py-24 bg-surface">
-        <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)]">
+        <Container>
           <div className="mb-16">
             <h2 className="text-headline-md md:text-headline-lg text-primary mb-4">
               Нашият подход
@@ -34,21 +35,21 @@ export default function ItStrategy() {
                 Пълна оценка на текущата ви инфраструктура и идентифициране на пропуските.
               </p>
             </div>
-            
+
             <div className="bg-brand-yellow rounded-xl p-8 hover:shadow-[var(--shadow-level-2)] transition-shadow">
               <h3 className="text-headline-sm text-brand-charcoal mb-3">Планиране</h3>
               <p className="text-body-sm text-brand-charcoal/80">
                 Дефиниране на стратегическа пътна карта с измерими цели и KPI.
               </p>
             </div>
-            
+
             <div className="bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 hover:shadow-[var(--shadow-level-2)] transition-shadow">
               <h3 className="text-headline-sm text-primary mb-3">Изпълнение</h3>
               <p className="text-body-sm text-on-surface-variant">
                 Интеграция на най-добрите технологични решения по прозрачен начин.
               </p>
             </div>
-            
+
             <div className="bg-surface-container-lowest border border-surface-container-high rounded-xl p-8 hover:shadow-[var(--shadow-level-2)] transition-shadow">
               <h3 className="text-headline-sm text-primary mb-3">Оптимизация</h3>
               <p className="text-body-sm text-on-surface-variant">
@@ -56,12 +57,12 @@ export default function ItStrategy() {
               </p>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Quote Band */}
       <section className="py-24 bg-brand-charcoal">
-        <div className="max-w-[var(--spacing-container-max)] mx-auto px-[var(--spacing-gutter)] text-center">
+        <Container className="text-center">
           <span className="text-label-caps text-brand-yellow block mb-8">NYMERIX STANDARDS</span>
           <blockquote className="text-headline-md text-white mb-12 max-w-3xl mx-auto">
             "Стратегическото мислене е основата на всяка дигитална трансформация."
@@ -71,7 +72,7 @@ export default function ItStrategy() {
             <span className="text-label-caps text-surface-container-high">СТРАТЕГИЧЕСКИ ЕТОС</span>
             <div className="h-[1px] w-12 bg-surface-container-high"></div>
           </div>
-        </div>
+        </Container>
       </section>
 
       <NumberedExpertise
