@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Container } from "./Container";
+import { contactHref } from "@/lib/contact";
 
 const navLinks = [
   { name: "Начало", href: "/" },
@@ -54,7 +55,7 @@ export function Header() {
         {/* CTA & Mobile Toggle */}
         <div className="flex items-center gap-4">
           <Link
-            href="/contact"
+            href={contactHref("Започване на нов проект с Nymerix")}
             className="hidden sm:inline-flex items-center justify-center px-6 py-2.5 bg-brand-charcoal text-white rounded-full text-label-bold transition-all hover:bg-brand-charcoal/90 active:scale-98"
           >
             Започни проект
@@ -97,7 +98,7 @@ export function Header() {
               );
             })}
             <Link
-              href="/contact"
+              href={contactHref("Започване на нов проект с Nymerix")}
               onClick={() => setIsMobileMenuOpen(false)}
               className="sm:hidden inline-flex items-center justify-center px-6 py-3 mt-4 bg-brand-charcoal text-white rounded-full text-label-bold transition-all active:scale-98"
             >

@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { NumberedExpertise } from "@/components/NumberedExpertise";
 import { CTABand } from "@/components/CTABand";
 import { Container } from "@/components/Container";
+import { contactHref } from "@/lib/contact";
 
 export default function ItStrategy() {
   return (
@@ -12,7 +13,7 @@ export default function ItStrategy() {
         highlightedLineIndex={1}
         paragraph="Трансформираме технологиите в конкурентно предимство. Създаваме устойчиви рамки за мащабиране на вашия бизнес."
         buttonText="Свържете се"
-        buttonHref="/contact"
+        buttonHref={contactHref("Запитване за IT стратегия — Nymerix")}
         showScrollChevron
       />
 
@@ -101,7 +102,7 @@ export default function ItStrategy() {
         title="Готови ли сте за следващата стъпка?"
         description="Нека превърнем вашата технологична визия в реално бизнес предимство."
         buttonText="Свържете се с нас →"
-        buttonHref="/contact"
+        buttonHref={contactHref("Запитване за IT стратегия — Nymerix")}
       />
     </>
   );

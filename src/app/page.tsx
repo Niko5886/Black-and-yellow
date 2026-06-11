@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { Container } from "@/components/Container";
 import { QuoteBand } from "@/components/QuoteBand";
 import { CTABand } from "@/components/CTABand";
+import { contactHref } from "@/lib/contact";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
         highlightedLineIndex={1}
         paragraph="Ние сме Nymerix – технологична консултантска компания, която превръща сложните предизвикателства в безпроблемни дигитални решения за модерни предприятия."
         buttonText="Започнете проект →"
-        buttonHref="/contact"
+        buttonHref={contactHref("Започване на нов проект с Nymerix")}
         showScrollChevron
       />
 
@@ -131,7 +132,7 @@ export default function Home() {
         title="Готови ли сте за следващата стъпка?"
         description="Свържете се с нас днес за безплатна консултация и открийте как Nymerix може да ускори вашия дигитален растеж."
         buttonText="Свържете се с нас"
-        buttonHref="/contact"
+        buttonHref={contactHref("Безплатна консултация с Nymerix")}
       />
     </>
   );

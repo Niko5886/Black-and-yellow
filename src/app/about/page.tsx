@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
 import { Container } from "@/components/Container";
+import { CONTACT_EMAIL, contactHref, contactMailto } from "@/lib/contact";
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
         highlightedLineIndex={1}
         paragraph="Nymerix е технологична консултантска компания, посветена на прецизност, иновации и устойчив растеж. Вярваме, че технологиите трябва да работят за хората, а не обратното."
         buttonText="Свържете се →"
-        buttonHref="/contact"
+        buttonHref={contactHref("Запитване от уебсайта на Nymerix")}
       />
 
       <section className="py-24 bg-surface">
@@ -46,12 +47,10 @@ export default function About() {
               </div>
               <h3 className="text-headline-sm text-brand-charcoal">Email</h3>
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=nymerix.ltd@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={contactMailto("Запитване от уебсайта на Nymerix")}
                 className="text-body-sm text-brand-charcoal/80 hover:text-brand-charcoal transition-colors break-all"
               >
-                nymerix.ltd@gmail.com
+                {CONTACT_EMAIL}
               </a>
             </div>
 

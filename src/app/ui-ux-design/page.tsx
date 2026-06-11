@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { Container } from "@/components/Container";
 import { QuoteBand } from "@/components/QuoteBand";
 import { CTABand } from "@/components/CTABand";
+import { contactHref } from "@/lib/contact";
 import Image from "next/image";
 
 export default function UiUxDesign() {
@@ -13,7 +14,7 @@ export default function UiUxDesign() {
         highlightedLineIndex={1}
         paragraph="Създаваме дигитални преживявания, които вдъхновяват и ангажират. Нашият UI/UX дизайн трансформира бизнес цели в интуитивни потребителски пътеки."
         buttonText="Свържете се"
-        buttonHref="/contact"
+        buttonHref={contactHref("Запитване за UI/UX дизайн — Nymerix")}
       />
 
       {/* Нашият подход */}
@@ -153,7 +154,7 @@ export default function UiUxDesign() {
         title="Готови ли сте за трансформация?"
         description="Нека превърнем вашите идеи в интуитивен интерфейс, който потребителите ще обичат."
         buttonText="Консултация →"
-        buttonHref="/contact"
+        buttonHref={contactHref("Безплатна консултация за UI/UX дизайн — Nymerix")}
       />
     </>
   );

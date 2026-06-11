@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "./Container";
+import { CONTACT_EMAIL, contactMailto } from "@/lib/contact";
 
 export function Footer() {
   return (
@@ -58,12 +59,10 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h4 className="text-label-caps text-on-surface">КОНТАКТ</h4>
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=nymerix.ltd@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={contactMailto("Запитване от уебсайта на Nymerix")}
               className="text-body-sm text-on-surface-variant hover:text-brand-yellow transition-colors"
             >
-              nymerix.ltd@gmail.com
+              {CONTACT_EMAIL}
             </a>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { NumberedExpertise } from "@/components/NumberedExpertise";
 import { CTABand } from "@/components/CTABand";
 import { Container } from "@/components/Container";
+import { contactHref } from "@/lib/contact";
 import Image from "next/image";
 
 export default function CloudSolutions() {
@@ -13,7 +14,7 @@ export default function CloudSolutions() {
         highlightedLineIndex={1}
         paragraph="Инфраструктура за бъдещето. Проектираме облачни екосистеми, които растат заедно с вашия бизнес, осигурявайки надеждност без компромиси."
         buttonText="Свържете се"
-        buttonHref="/contact"
+        buttonHref={contactHref("Запитване за облачни решения — Nymerix")}
       />
 
       {/* Нашият подход */}
@@ -163,7 +164,7 @@ export default function CloudSolutions() {
                 <p className="text-headline-sm text-brand-charcoal">
                   По-висока продуктивност за вашите служители чрез AI интеграция
                 </p>
-                <a href="/contact" className="inline-flex items-center justify-center px-6 py-3 bg-brand-charcoal text-white rounded-full text-label-bold transition-all hover:bg-brand-charcoal/90 active:scale-98">
+                <a href={contactHref("Запитване за AI Transform — Nymerix")} className="inline-flex items-center justify-center px-6 py-3 bg-brand-charcoal text-white rounded-full text-label-bold transition-all hover:bg-brand-charcoal/90 active:scale-98">
                   Започнете AI Transform
                 </a>
               </div>
@@ -221,7 +222,7 @@ export default function CloudSolutions() {
         title="Готови ли сте за следващата стъпка?"
         description="Свържете се с нас за безплатна консултация относно вашата облачна стратегия."
         buttonText="Консултация"
-        buttonHref="/contact"
+        buttonHref={contactHref("Безплатна консултация за облачна стратегия — Nymerix")}
       />
     </>
   );
