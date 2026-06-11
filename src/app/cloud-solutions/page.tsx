@@ -210,6 +210,7 @@ export default function CloudSolutions() {
                 src="/img.png"
                 alt="Microsoft Copilot Device"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>

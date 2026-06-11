@@ -28,6 +28,7 @@ export function HeroSection({
           src="/img.png"
           alt="Nymerix background"
           fill
+          sizes="100vw"
           className="object-cover object-center opacity-80"
           priority
         />

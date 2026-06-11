@@ -9,15 +9,15 @@ export const CONTACT_EMAIL = "nymerix.ltd@gmail.com";
 /**
  * Web3Forms Access Key.
  * ─────────────────────────────────────────────────────────────────────────
- * ВАЖНО: Замени стойността по-долу със своя ключ.
- *   1. Влез в https://web3forms.com
- *   2. Въведи имейла nymerix.ltd@gmail.com и натисни "Create Access Key"
- *   3. Копирай получения ключ и го постави тук между кавичките.
- * Този ключ е безопасен за публикуване в кода (така е проектиран Web3Forms).
+ * Имейлите от контактната форма се доставят на собственика на този ключ.
+ * Ключът трябва да е създаден с акаунта nymerix.ltd@gmail.com, за да стигат
+ * запитванията до правилната поща.
+ *
+ * Стойността се чете от .env.local (NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY) и не се
+ * пази в кода. За да смениш ключа, редактирай .env.local — не този файл.
  */
 export const WEB3FORMS_ACCESS_KEY =
-  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ??
-  "88c3225a-5e12-41b7-ae33-c098d40b2420";
+  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "";
 
 /**
  * Изгражда вътрешна връзка към формата за контакт с предварително попълнена

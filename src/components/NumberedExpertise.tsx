@@ -47,6 +47,7 @@ export function NumberedExpertise({ title, items, imageAlt }: NumberedExpertiseP
               src="/img.png"
               alt={imageAlt}
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
           </div>

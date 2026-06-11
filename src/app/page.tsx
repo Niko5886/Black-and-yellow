@@ -42,6 +42,7 @@ export default function Home() {
                   src="/screen2.png"
                   alt="Корпоративен Софтуер background"
                   fill
+                  sizes="(max-width: 768px) 100vw, 60vw"
                   className="object-cover object-center"
                 />
                 {/* Dark overlay for readability */}
@@ -114,6 +115,7 @@ export default function Home() {
                     src="/img.png"
                     alt="Cloud infrastructure"
                     fill
+                    sizes="(max-width: 768px) 100vw, 30vw"
                     className="object-cover rounded-lg"
                   />
                 </div>
